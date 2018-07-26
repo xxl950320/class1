@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作业4</title>
+</head>
+<body>
+	<form action="#" style = "width:500px;height:500px;border:1px solid #000;text-align:center;margin:40px auto 0;background-color:rgb(135,206,235);padding-top: 50px;">
+		用户名
+		<input type="text" name = "username" placeholder = "请设置用户名" autofocus="true" style = "width:300px" size = '40'><br>
+		手机号
+		<input type="tel"  name = "tel" placeholder = "可用于登录和找回密码" pattern = "[0-9]{11}" required = "required" style = "width:300px" onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')"><br>
+		验证码
+		<input type="text" name = "number" 
+	    placeholder = "请输入验证码"	 pattern = "[0-9]{4}" style = "width:300px;margin-left:5px;"onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')"> <br>
+		密码
+		<!-- <input type="text" name = "psw" placeholder = "请输入登录密码 " minlength="7" style = "margin-left:20px;width:300px"  size = "40" onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')"> -->
+		<input type="password" name = "number" minlength="7" placeholder = "请输入登录密码 "  style = "margin-left:20px;width:300px"  size = "40" >
+		<br>
+		<input type="checkbox" name = "treaty" style = "margin-left:52px;margin-top:10px;width:15px;height:15px">阅读并接受百度用户协议<br>
+		<input type="submit" name = "sign up" value = "注册" style = "margin-left: 120px" ><br>
+		<span style = "margin-left:60px;margin-top:10px;display:block;color:#f00">每个输入框的宽度设置为40个字符</span>
+	</form>
+</body>
+</html>
